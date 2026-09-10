@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Livros</title>
+</head>
+<body>
+
+    <main>
+        <h2>Lista de livros</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Tema</th>
+                    <th>Ano de Publicação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for livro in livros %}
+                <tr>
+                    <td>{{ livro[0] }}</td>
+                    <td>{{ livro[1] }}</td>
+                    <td>{{ livro[2] }}</td>
+                    <td>{{ livro[3] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>
